@@ -1,0 +1,427 @@
+{
+  "success": true,
+  "meal_plan": {
+    "dietary_preference": "omnivore",
+    "recipes": [
+      {
+        "day": "Monday",
+        "theme": "Italian",
+        "dish_name": "Pasta Primavera",
+        "ingredients": [
+          {
+            "name": "Pasta",
+            "quantity": "200g"
+          },
+          {
+            "name": "Bell peppers",
+            "quantity": "100g"
+          },
+          {
+            "name": "Zucchini",
+            "quantity": "100g"
+          },
+          {
+            "name": "Cherry tomatoes",
+            "quantity": "150g"
+          },
+          {
+            "name": "Parmesan cheese",
+            "quantity": "50g"
+          }
+        ],
+        "instructions": "Cook pasta according to package instructions. Sauté bell peppers, zucchini, and cherry tomatoes in a pan. Combine cooked pasta with sautéed vegetables and top with grated Parmesan cheese."
+      },
+      {
+        "day": "Tuesday",
+        "theme": "Mexican",
+        "dish_name": "Chicken Fajitas",
+        "ingredients": [
+          {
+            "name": "Chicken breast",
+            "quantity": "200g"
+          },
+          {
+            "name": "Bell peppers",
+            "quantity": "150g"
+          },
+          {
+            "name": "Onion",
+            "quantity": "100g"
+          },
+          {
+            "name": "Tortillas",
+            "quantity": "4 pieces"
+          },
+          {
+            "name": "Sour cream",
+            "quantity": "100g"
+          }
+        ],
+        "instructions": "Slice chicken, bell peppers, and onion. Sauté until chicken is cooked and vegetables are tender. Serve in tortillas with sour cream."
+      },
+      {
+        "day": "Wednesday",
+        "theme": "Japanese",
+        "dish_name": "Teriyaki Chicken",
+        "ingredients": [
+          {
+            "name": "Chicken thighs",
+            "quantity": "200g"
+          },
+          {
+            "name": "Soy sauce",
+            "quantity": "50ml"
+          },
+          {
+            "name": "Mirin",
+            "quantity": "30ml"
+          },
+          {
+            "name": "Sesame seeds",
+            "quantity": "1 tbsp"
+          },
+          {
+            "name": "Broccoli",
+            "quantity": "150g"
+          }
+        ],
+        "instructions": "Cook chicken thighs in a pan. Add soy sauce and mirin, simmer until cooked. Serve with steamed broccoli and sprinkle with sesame seeds."
+      },
+      {
+        "day": "Thursday",
+        "theme": "Indian",
+        "dish_name": "Butter Chicken",
+        "ingredients": [
+          {
+            "name": "Chicken breast",
+            "quantity": "200g"
+          },
+          {
+            "name": "Butter",
+            "quantity": "50g"
+          },
+          {
+            "name": "Tomato puree",
+            "quantity": "100g"
+          },
+          {
+            "name": "Cream",
+            "quantity": "100ml"
+          },
+          {
+            "name": "Garam masala",
+            "quantity": "1 tsp"
+          }
+        ],
+        "instructions": "Sauté butter, add chicken and cook until browned. Stir in tomato puree, cream, and garam masala, simmer until chicken is cooked through."
+      },
+      {
+        "day": "Friday",
+        "theme": "Thai",
+        "dish_name": "Green Curry",
+        "ingredients": [
+          {
+            "name": "Coconut milk",
+            "quantity": "400ml"
+          },
+          {
+            "name": "Green curry paste",
+            "quantity": "2 tbsp"
+          },
+          {
+            "name": "Chicken breast",
+            "quantity": "200g"
+          },
+          {
+            "name": "Eggplant",
+            "quantity": "100g"
+          },
+          {
+            "name": "Basil leaves",
+            "quantity": "1 handful"
+          }
+        ],
+        "instructions": "In a pot, heat coconut milk and stir in green curry paste. Add chicken and eggplant, simmer until cooked. Garnish with basil leaves."
+      },
+      {
+        "day": "Saturday",
+        "theme": "Greek",
+        "dish_name": "Chicken Souvlaki",
+        "ingredients": [
+          {
+            "name": "Chicken breast",
+            "quantity": "200g"
+          },
+          {
+            "name": "Olive oil",
+            "quantity": "2 tbsp"
+          },
+          {
+            "name": "Lemon juice",
+            "quantity": "30ml"
+          },
+          {
+            "name": "Oregano",
+            "quantity": "1 tsp"
+          },
+          {
+            "name": "Pita bread",
+            "quantity": "2 pieces"
+          }
+        ],
+        "instructions": "Marinate chicken in olive oil, lemon juice, and oregano. Grill or pan-fry until cooked. Serve with pita bread."
+      },
+      {
+        "day": "Sunday",
+        "theme": "American",
+        "dish_name": "BBQ Pulled Pork",
+        "ingredients": [
+          {
+            "name": "Pork shoulder",
+            "quantity": "300g"
+          },
+          {
+            "name": "BBQ sauce",
+            "quantity": "100ml"
+          },
+          {
+            "name": "Burger buns",
+            "quantity": "2 pieces"
+          },
+          {
+            "name": "Coleslaw mix",
+            "quantity": "150g"
+          },
+          {
+            "name": "Pickles",
+            "quantity": "100g"
+          }
+        ],
+        "instructions": "Slow cook pork shoulder until tender, then shred. Mix with BBQ sauce and serve on buns with coleslaw and pickles."
+      }
+    ],
+    "shopping_list": [
+      {
+        "name": "Pasta",
+        "total_quantity": "200g",
+        "used_in": [
+          "Pasta Primavera"
+        ]
+      },
+      {
+        "name": "Bell peppers",
+        "total_quantity": "250g",
+        "used_in": [
+          "Pasta Primavera",
+          "Chicken Fajitas"
+        ]
+      },
+      {
+        "name": "Zucchini",
+        "total_quantity": "100g",
+        "used_in": [
+          "Pasta Primavera"
+        ]
+      },
+      {
+        "name": "Cherry tomatoes",
+        "total_quantity": "150g",
+        "used_in": [
+          "Pasta Primavera"
+        ]
+      },
+      {
+        "name": "Parmesan cheese",
+        "total_quantity": "50g",
+        "used_in": [
+          "Pasta Primavera"
+        ]
+      },
+      {
+        "name": "Chicken breast",
+        "total_quantity": "600g",
+        "used_in": [
+          "Chicken Fajitas",
+          "Butter Chicken"
+        ]
+      },
+      {
+        "name": "Onion",
+        "total_quantity": "100g",
+        "used_in": [
+          "Chicken Fajitas"
+        ]
+      },
+      {
+        "name": "Tortillas",
+        "total_quantity": "4 pieces",
+        "used_in": [
+          "Chicken Fajitas"
+        ]
+      },
+      {
+        "name": "Sour cream",
+        "total_quantity": "100g",
+        "used_in": [
+          "Chicken Fajitas"
+        ]
+      },
+      {
+        "name": "Chicken thighs",
+        "total_quantity": "200g",
+        "used_in": [
+          "Teriyaki Chicken"
+        ]
+      },
+      {
+        "name": "Soy sauce",
+        "total_quantity": "50ml",
+        "used_in": [
+          "Teriyaki Chicken"
+        ]
+      },
+      {
+        "name": "Mirin",
+        "total_quantity": "30ml",
+        "used_in": [
+          "Teriyaki Chicken"
+        ]
+      },
+      {
+        "name": "Sesame seeds",
+        "total_quantity": "1 tbsp",
+        "used_in": [
+          "Teriyaki Chicken"
+        ]
+      },
+      {
+        "name": "Broccoli",
+        "total_quantity": "150g",
+        "used_in": [
+          "Teriyaki Chicken"
+        ]
+      },
+      {
+        "name": "Butter",
+        "total_quantity": "50g",
+        "used_in": [
+          "Butter Chicken"
+        ]
+      },
+      {
+        "name": "Tomato puree",
+        "total_quantity": "100g",
+        "used_in": [
+          "Butter Chicken"
+        ]
+      },
+      {
+        "name": "Cream",
+        "total_quantity": "100ml",
+        "used_in": [
+          "Butter Chicken"
+        ]
+      },
+      {
+        "name": "Garam masala",
+        "total_quantity": "1 tsp",
+        "used_in": [
+          "Butter Chicken"
+        ]
+      },
+      {
+        "name": "Coconut milk",
+        "total_quantity": "400ml",
+        "used_in": [
+          "Green Curry"
+        ]
+      },
+      {
+        "name": "Green curry paste",
+        "total_quantity": "2 tbsp",
+        "used_in": [
+          "Green Curry"
+        ]
+      },
+      {
+        "name": "Eggplant",
+        "total_quantity": "100g",
+        "used_in": [
+          "Green Curry"
+        ]
+      },
+      {
+        "name": "Basil leaves",
+        "total_quantity": "1 handful",
+        "used_in": [
+          "Green Curry"
+        ]
+      },
+      {
+        "name": "Olive oil",
+        "total_quantity": "2 tbsp",
+        "used_in": [
+          "Chicken Souvlaki"
+        ]
+      },
+      {
+        "name": "Lemon juice",
+        "total_quantity": "30ml",
+        "used_in": [
+          "Chicken Souvlaki"
+        ]
+      },
+      {
+        "name": "Oregano",
+        "total_quantity": "1 tsp",
+        "used_in": [
+          "Chicken Souvlaki"
+        ]
+      },
+      {
+        "name": "Pita bread",
+        "total_quantity": "2 pieces",
+        "used_in": [
+          "Chicken Souvlaki"
+        ]
+      },
+      {
+        "name": "Pork shoulder",
+        "total_quantity": "300g",
+        "used_in": [
+          "BBQ Pulled Pork"
+        ]
+      },
+      {
+        "name": "BBQ sauce",
+        "total_quantity": "100ml",
+        "used_in": [
+          "BBQ Pulled Pork"
+        ]
+      },
+      {
+        "name": "Burger buns",
+        "total_quantity": "2 pieces",
+        "used_in": [
+          "BBQ Pulled Pork"
+        ]
+      },
+      {
+        "name": "Coleslaw mix",
+        "total_quantity": "150g",
+        "used_in": [
+          "BBQ Pulled Pork"
+        ]
+      },
+      {
+        "name": "Pickles",
+        "total_quantity": "100g",
+        "used_in": [
+          "BBQ Pulled Pork"
+        ]
+      }
+    ]
+  },
+  "generation_time": 23.07,
+  "error": null
+}

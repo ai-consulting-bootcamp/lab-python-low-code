@@ -21,3 +21,12 @@ This repository contains everything you need for this lab.
 - Keep this repository scoped to this lab only — no unrelated projects or personal files.
 - Use clear, descriptive filenames.
 - Remove secrets, API keys, and tokens before committing.
+
+## My submission
+
+Start here: [Lab proof](lab_proof.md).
+
+- [Refactored notebook](meal_planner_refactored.ipynb): code and test outputs.
+- [Original notebook](meal_planner_starter.ipynb): baseline for comparison.
+- [Learning summary](lab_summary.md): challenges and lessons learned.
+- [Output evidence](evidence/successful_output.json): saved generated menu.
