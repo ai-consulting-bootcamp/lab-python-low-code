@@ -1,0 +1,22 @@
+[
+  {
+    "dietary_preference": "omnivore",
+    "theme_requests": "random",
+    "additional_preferences": "none"
+  },
+  {
+    "dietary_preference": "vegetarian",
+    "theme_requests": "random",
+    "additional_preferences": "none"
+  },
+  {
+    "dietary_preference": "vegan",
+    "theme_requests": "random",
+    "additional_preferences": "none"
+  },
+  {
+    "dietary_preference": "keto",
+    "theme_requests": "random",
+    "additional_preferences": "none"
+  }
+]
