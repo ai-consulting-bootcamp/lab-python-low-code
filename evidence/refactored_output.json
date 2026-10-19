@@ -1,0 +1,437 @@
+{
+  "dietary_preference": "omnivore",
+  "recipes": [
+    {
+      "day": "Monday",
+      "theme": "Italian",
+      "dish_name": "Spaghetti Carbonara",
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "quantity": "200g"
+        },
+        {
+          "name": "pancetta",
+          "quantity": "100g"
+        },
+        {
+          "name": "parmesan cheese",
+          "quantity": "50g"
+        },
+        {
+          "name": "eggs",
+          "quantity": "2"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "to taste"
+        }
+      ],
+      "instructions": "Cook spaghetti. Fry pancetta until crisp. Beat eggs with cheese, then combine with hot pasta and pancetta. Season with black pepper."
+    },
+    {
+      "day": "Tuesday",
+      "theme": "Mexican",
+      "dish_name": "Chicken Tacos",
+      "ingredients": [
+        {
+          "name": "chicken breast",
+          "quantity": "200g"
+        },
+        {
+          "name": "taco shells",
+          "quantity": "4"
+        },
+        {
+          "name": "avocado",
+          "quantity": "1"
+        },
+        {
+          "name": "salsa",
+          "quantity": "100g"
+        },
+        {
+          "name": "cilantro",
+          "quantity": "10g"
+        }
+      ],
+      "instructions": "Cook chicken and shred it. Fill taco shells with chicken, avocado, salsa, and cilantro."
+    },
+    {
+      "day": "Wednesday",
+      "theme": "Japanese",
+      "dish_name": "Teriyaki Salmon",
+      "ingredients": [
+        {
+          "name": "salmon fillets",
+          "quantity": "2"
+        },
+        {
+          "name": "teriyaki sauce",
+          "quantity": "100ml"
+        },
+        {
+          "name": "broccoli",
+          "quantity": "200g"
+        },
+        {
+          "name": "rice",
+          "quantity": "150g"
+        },
+        {
+          "name": "sesame seeds",
+          "quantity": "1 tbsp"
+        }
+      ],
+      "instructions": "Marinate salmon in teriyaki sauce and bake. Steam broccoli. Serve with rice and sprinkle with sesame seeds."
+    },
+    {
+      "day": "Thursday",
+      "theme": "Indian",
+      "dish_name": "Butter Chicken",
+      "ingredients": [
+        {
+          "name": "chicken thighs",
+          "quantity": "200g"
+        },
+        {
+          "name": "butter",
+          "quantity": "50g"
+        },
+        {
+          "name": "canned tomatoes",
+          "quantity": "200g"
+        },
+        {
+          "name": "cream",
+          "quantity": "100ml"
+        },
+        {
+          "name": "garam masala",
+          "quantity": "1 tbsp"
+        }
+      ],
+      "instructions": "Cook chicken in butter, add tomatoes and cream. Stir in garam masala and simmer until thickened."
+    },
+    {
+      "day": "Friday",
+      "theme": "Thai",
+      "dish_name": "Pad Thai",
+      "ingredients": [
+        {
+          "name": "rice noodles",
+          "quantity": "200g"
+        },
+        {
+          "name": "shrimp",
+          "quantity": "150g"
+        },
+        {
+          "name": "egg",
+          "quantity": "1"
+        },
+        {
+          "name": "bean sprouts",
+          "quantity": "100g"
+        },
+        {
+          "name": "peanuts",
+          "quantity": "50g"
+        }
+      ],
+      "instructions": "Soak noodles. Stir-fry shrimp, add noodles, egg, and bean sprouts. Top with crushed peanuts."
+    },
+    {
+      "day": "Saturday",
+      "theme": "Greek",
+      "dish_name": "Chicken Souvlaki",
+      "ingredients": [
+        {
+          "name": "chicken breast",
+          "quantity": "200g"
+        },
+        {
+          "name": "olive oil",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "oregano",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "pita bread",
+          "quantity": "2"
+        },
+        {
+          "name": "tzatziki",
+          "quantity": "100g"
+        }
+      ],
+      "instructions": "Marinate chicken in olive oil and oregano, then grill. Serve with pita and tzatziki."
+    },
+    {
+      "day": "Sunday",
+      "theme": "American",
+      "dish_name": "BBQ Ribs",
+      "ingredients": [
+        {
+          "name": "pork ribs",
+          "quantity": "400g"
+        },
+        {
+          "name": "BBQ sauce",
+          "quantity": "150ml"
+        },
+        {
+          "name": "corn on the cob",
+          "quantity": "2"
+        },
+        {
+          "name": "coleslaw mix",
+          "quantity": "100g"
+        },
+        {
+          "name": "butter",
+          "quantity": "30g"
+        }
+      ],
+      "instructions": "Slow-cook ribs with BBQ sauce. Boil corn and mix coleslaw. Serve with butter on corn."
+    }
+  ],
+  "shopping_list": [
+    {
+      "name": "spaghetti",
+      "total_quantity": "200g",
+      "used_in": [
+        "Spaghetti Carbonara"
+      ]
+    },
+    {
+      "name": "pancetta",
+      "total_quantity": "100g",
+      "used_in": [
+        "Spaghetti Carbonara"
+      ]
+    },
+    {
+      "name": "parmesan cheese",
+      "total_quantity": "50g",
+      "used_in": [
+        "Spaghetti Carbonara"
+      ]
+    },
+    {
+      "name": "eggs",
+      "total_quantity": "2",
+      "used_in": [
+        "Spaghetti Carbonara"
+      ]
+    },
+    {
+      "name": "black pepper",
+      "total_quantity": "to taste",
+      "used_in": [
+        "Spaghetti Carbonara"
+      ]
+    },
+    {
+      "name": "chicken breast",
+      "total_quantity": "400g",
+      "used_in": [
+        "Chicken Tacos",
+        "Chicken Souvlaki"
+      ]
+    },
+    {
+      "name": "taco shells",
+      "total_quantity": "4",
+      "used_in": [
+        "Chicken Tacos"
+      ]
+    },
+    {
+      "name": "avocado",
+      "total_quantity": "1",
+      "used_in": [
+        "Chicken Tacos"
+      ]
+    },
+    {
+      "name": "salsa",
+      "total_quantity": "100g",
+      "used_in": [
+        "Chicken Tacos"
+      ]
+    },
+    {
+      "name": "cilantro",
+      "total_quantity": "10g",
+      "used_in": [
+        "Chicken Tacos"
+      ]
+    },
+    {
+      "name": "salmon fillets",
+      "total_quantity": "2",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "teriyaki sauce",
+      "total_quantity": "100ml",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "broccoli",
+      "total_quantity": "200g",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "rice",
+      "total_quantity": "150g",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "sesame seeds",
+      "total_quantity": "1 tbsp",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "chicken thighs",
+      "total_quantity": "200g",
+      "used_in": [
+        "Butter Chicken"
+      ]
+    },
+    {
+      "name": "butter",
+      "total_quantity": "80g",
+      "used_in": [
+        "Butter Chicken",
+        "Chicken Souvlaki",
+        "BBQ Ribs"
+      ]
+    },
+    {
+      "name": "canned tomatoes",
+      "total_quantity": "200g",
+      "used_in": [
+        "Butter Chicken"
+      ]
+    },
+    {
+      "name": "cream",
+      "total_quantity": "100ml",
+      "used_in": [
+        "Butter Chicken"
+      ]
+    },
+    {
+      "name": "garam masala",
+      "total_quantity": "1 tbsp",
+      "used_in": [
+        "Butter Chicken"
+      ]
+    },
+    {
+      "name": "rice noodles",
+      "total_quantity": "200g",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "shrimp",
+      "total_quantity": "150g",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "egg",
+      "total_quantity": "1",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "bean sprouts",
+      "total_quantity": "100g",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "peanuts",
+      "total_quantity": "50g",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "olive oil",
+      "total_quantity": "2 tbsp",
+      "used_in": [
+        "Chicken Souvlaki"
+      ]
+    },
+    {
+      "name": "oregano",
+      "total_quantity": "1 tsp",
+      "used_in": [
+        "Chicken Souvlaki"
+      ]
+    },
+    {
+      "name": "pita bread",
+      "total_quantity": "2",
+      "used_in": [
+        "Chicken Souvlaki"
+      ]
+    },
+    {
+      "name": "tzatziki",
+      "total_quantity": "100g",
+      "used_in": [
+        "Chicken Souvlaki"
+      ]
+    },
+    {
+      "name": "pork ribs",
+      "total_quantity": "400g",
+      "used_in": [
+        "BBQ Ribs"
+      ]
+    },
+    {
+      "name": "BBQ sauce",
+      "total_quantity": "150ml",
+      "used_in": [
+        "BBQ Ribs"
+      ]
+    },
+    {
+      "name": "corn on the cob",
+      "total_quantity": "2",
+      "used_in": [
+        "BBQ Ribs"
+      ]
+    },
+    {
+      "name": "coleslaw mix",
+      "total_quantity": "100g",
+      "used_in": [
+        "BBQ Ribs"
+      ]
+    }
+  ]
+}

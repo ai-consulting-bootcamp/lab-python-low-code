@@ -1,0 +1,436 @@
+{
+  "dietary_preference": "omnivore",
+  "recipes": [
+    {
+      "day": "Monday",
+      "theme": "Italian",
+      "dish_name": "Spaghetti Aglio e Olio",
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "quantity": "200g"
+        },
+        {
+          "name": "garlic",
+          "quantity": "4 cloves"
+        },
+        {
+          "name": "olive oil",
+          "quantity": "50ml"
+        },
+        {
+          "name": "red pepper flakes",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "parsley",
+          "quantity": "1/4 cup"
+        }
+      ],
+      "instructions": "Cook spaghetti. Sauté garlic in olive oil, add red pepper flakes. Toss with spaghetti and parsley."
+    },
+    {
+      "day": "Tuesday",
+      "theme": "Mexican",
+      "dish_name": "Chicken Tacos",
+      "ingredients": [
+        {
+          "name": "chicken breast",
+          "quantity": "300g"
+        },
+        {
+          "name": "taco shells",
+          "quantity": "4"
+        },
+        {
+          "name": "lettuce",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "tomato",
+          "quantity": "1"
+        },
+        {
+          "name": "cheddar cheese",
+          "quantity": "100g"
+        }
+      ],
+      "instructions": "Cook chicken, shred it. Fill taco shells with chicken, lettuce, tomato, and cheese."
+    },
+    {
+      "day": "Wednesday",
+      "theme": "Japanese",
+      "dish_name": "Teriyaki Salmon",
+      "ingredients": [
+        {
+          "name": "salmon fillets",
+          "quantity": "2"
+        },
+        {
+          "name": "soy sauce",
+          "quantity": "50ml"
+        },
+        {
+          "name": "honey",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "ginger",
+          "quantity": "1 inch"
+        },
+        {
+          "name": "green onions",
+          "quantity": "2"
+        }
+      ],
+      "instructions": "Combine soy sauce, honey, and ginger. Marinate salmon, then grill. Garnish with green onions."
+    },
+    {
+      "day": "Thursday",
+      "theme": "Indian",
+      "dish_name": "Butter Chicken",
+      "ingredients": [
+        {
+          "name": "chicken thighs",
+          "quantity": "300g"
+        },
+        {
+          "name": "butter",
+          "quantity": "50g"
+        },
+        {
+          "name": "tomato puree",
+          "quantity": "200g"
+        },
+        {
+          "name": "cream",
+          "quantity": "100ml"
+        },
+        {
+          "name": "garam masala",
+          "quantity": "1 tbsp"
+        }
+      ],
+      "instructions": "Sauté chicken in butter, add tomato puree and cream. Stir in garam masala and simmer."
+    },
+    {
+      "day": "Friday",
+      "theme": "Thai",
+      "dish_name": "Pad Thai",
+      "ingredients": [
+        {
+          "name": "rice noodles",
+          "quantity": "200g"
+        },
+        {
+          "name": "tofu",
+          "quantity": "150g"
+        },
+        {
+          "name": "bean sprouts",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "peanut butter",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "lime",
+          "quantity": "1"
+        }
+      ],
+      "instructions": "Cook noodles. Stir-fry tofu, add noodles, bean sprouts, and peanut butter. Serve with lime."
+    },
+    {
+      "day": "Saturday",
+      "theme": "Greek",
+      "dish_name": "Greek Salad",
+      "ingredients": [
+        {
+          "name": "cucumber",
+          "quantity": "1"
+        },
+        {
+          "name": "tomatoes",
+          "quantity": "2"
+        },
+        {
+          "name": "feta cheese",
+          "quantity": "100g"
+        },
+        {
+          "name": "olives",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "red onion",
+          "quantity": "1/2"
+        }
+      ],
+      "instructions": "Chop cucumber, tomatoes, onion. Mix with olives and feta. Drizzle with olive oil."
+    },
+    {
+      "day": "Sunday",
+      "theme": "American",
+      "dish_name": "BBQ Chicken",
+      "ingredients": [
+        {
+          "name": "chicken drumsticks",
+          "quantity": "4"
+        },
+        {
+          "name": "BBQ sauce",
+          "quantity": "100ml"
+        },
+        {
+          "name": "corn on the cob",
+          "quantity": "2"
+        },
+        {
+          "name": "potatoes",
+          "quantity": "4"
+        },
+        {
+          "name": "butter",
+          "quantity": "30g"
+        }
+      ],
+      "instructions": "Grill chicken brushed with BBQ sauce. Boil corn and potatoes. Serve with butter on potatoes."
+    }
+  ],
+  "shopping_list": [
+    {
+      "name": "spaghetti",
+      "total_quantity": "200g",
+      "used_in": [
+        "Spaghetti Aglio e Olio"
+      ]
+    },
+    {
+      "name": "garlic",
+      "total_quantity": "4 cloves",
+      "used_in": [
+        "Spaghetti Aglio e Olio"
+      ]
+    },
+    {
+      "name": "olive oil",
+      "total_quantity": "50ml",
+      "used_in": [
+        "Spaghetti Aglio e Olio"
+      ]
+    },
+    {
+      "name": "red pepper flakes",
+      "total_quantity": "1 tsp",
+      "used_in": [
+        "Spaghetti Aglio e Olio"
+      ]
+    },
+    {
+      "name": "parsley",
+      "total_quantity": "1/4 cup",
+      "used_in": [
+        "Spaghetti Aglio e Olio"
+      ]
+    },
+    {
+      "name": "chicken breast",
+      "total_quantity": "300g",
+      "used_in": [
+        "Chicken Tacos"
+      ]
+    },
+    {
+      "name": "taco shells",
+      "total_quantity": "4",
+      "used_in": [
+        "Chicken Tacos"
+      ]
+    },
+    {
+      "name": "lettuce",
+      "total_quantity": "1 cup",
+      "used_in": [
+        "Chicken Tacos"
+      ]
+    },
+    {
+      "name": "tomato",
+      "total_quantity": "3",
+      "used_in": [
+        "Chicken Tacos",
+        "Greek Salad"
+      ]
+    },
+    {
+      "name": "cheddar cheese",
+      "total_quantity": "100g",
+      "used_in": [
+        "Chicken Tacos"
+      ]
+    },
+    {
+      "name": "salmon fillets",
+      "total_quantity": "2",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "soy sauce",
+      "total_quantity": "50ml",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "honey",
+      "total_quantity": "2 tbsp",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "ginger",
+      "total_quantity": "1 inch",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "green onions",
+      "total_quantity": "2",
+      "used_in": [
+        "Teriyaki Salmon"
+      ]
+    },
+    {
+      "name": "chicken thighs",
+      "total_quantity": "300g",
+      "used_in": [
+        "Butter Chicken"
+      ]
+    },
+    {
+      "name": "butter",
+      "total_quantity": "80g",
+      "used_in": [
+        "Butter Chicken",
+        "BBQ Chicken"
+      ]
+    },
+    {
+      "name": "tomato puree",
+      "total_quantity": "200g",
+      "used_in": [
+        "Butter Chicken"
+      ]
+    },
+    {
+      "name": "cream",
+      "total_quantity": "100ml",
+      "used_in": [
+        "Butter Chicken"
+      ]
+    },
+    {
+      "name": "garam masala",
+      "total_quantity": "1 tbsp",
+      "used_in": [
+        "Butter Chicken"
+      ]
+    },
+    {
+      "name": "rice noodles",
+      "total_quantity": "200g",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "tofu",
+      "total_quantity": "150g",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "bean sprouts",
+      "total_quantity": "1 cup",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "peanut butter",
+      "total_quantity": "2 tbsp",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "lime",
+      "total_quantity": "1",
+      "used_in": [
+        "Pad Thai"
+      ]
+    },
+    {
+      "name": "cucumber",
+      "total_quantity": "1",
+      "used_in": [
+        "Greek Salad"
+      ]
+    },
+    {
+      "name": "feta cheese",
+      "total_quantity": "100g",
+      "used_in": [
+        "Greek Salad"
+      ]
+    },
+    {
+      "name": "olives",
+      "total_quantity": "1/2 cup",
+      "used_in": [
+        "Greek Salad"
+      ]
+    },
+    {
+      "name": "red onion",
+      "total_quantity": "1/2",
+      "used_in": [
+        "Greek Salad"
+      ]
+    },
+    {
+      "name": "chicken drumsticks",
+      "total_quantity": "4",
+      "used_in": [
+        "BBQ Chicken"
+      ]
+    },
+    {
+      "name": "BBQ sauce",
+      "total_quantity": "100ml",
+      "used_in": [
+        "BBQ Chicken"
+      ]
+    },
+    {
+      "name": "corn on the cob",
+      "total_quantity": "2",
+      "used_in": [
+        "BBQ Chicken"
+      ]
+    },
+    {
+      "name": "potatoes",
+      "total_quantity": "4",
+      "used_in": [
+        "BBQ Chicken"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+2026-10-19T22:56:48+02:00 | 5645fc29a2f04751ae6a78fc02b24bde | Input saved: evidence/refactored_input.json
+2026-10-19T22:56:48+02:00 | 5645fc29a2f04751ae6a78fc02b24bde | Live generation started; model=gpt-4o-mini
+2026-10-19T22:57:09+02:00 | 5645fc29a2f04751ae6a78fc02b24bde | Generation completed; success=True
+2026-10-19T22:57:09+02:00 | 5645fc29a2f04751ae6a78fc02b24bde | Schema validation completed; passed=True
+2026-10-19T22:57:09+02:00 | 5645fc29a2f04751ae6a78fc02b24bde | Validated output saved: evidence/refactored_output.json
