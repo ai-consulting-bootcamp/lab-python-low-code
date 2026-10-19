@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "id": "P101",
+      "name": "Invalid Negative Price Product",
+      "category": "Testing",
+      "price": -10.00,
+      "features": ["Example feature"]
+    },
+    {
+      "id": "P102",
+      "category": "Testing",
+      "price": 25.00,
+      "features": ["Missing name field"]
+    },
+    {
+      "id": "P103",
+      "name": "Missing Price Product",
+      "category": "Testing",
+      "features": ["Missing price field"]
+    }
+  ]
+}
