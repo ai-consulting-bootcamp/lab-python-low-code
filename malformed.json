@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "id": "P201",
+      "name": "Malformed Product",
+      "category": "Testing",
+      "price": 12.50,
+      "features": ["Missing closing bracket"]
+    }
+  ]
