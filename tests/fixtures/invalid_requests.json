@@ -1,0 +1,12 @@
+[
+  {
+    "dietary_preference": "omnivore",
+    "theme_requests": "random",
+    "additional_preferences": "none"
+  },
+  {
+    "dietary_preference": "unsupported-diet",
+    "theme_requests": "Italian",
+    "additional_preferences": "none"
+  }
+]
