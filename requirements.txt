@@ -1,0 +1,8 @@
+# Only what the refactored notebook imports
+# (the original also installed langchain and langchain-anthropic, which nothing used)
+langchain-openai
+langchain-core
+openai>=1
+pydantic>=2
+gradio
+python-dotenv

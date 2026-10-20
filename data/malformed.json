@@ -1,0 +1,6 @@
+{
+  "requests": [
+    {"dietary_preference": "vegan", "theme_requests": "random", "additional_preferences": "none"}
+    {"dietary_preference": "keto", "theme_requests": "Greek", "additional_preferences": "none"}
+  ]
+}

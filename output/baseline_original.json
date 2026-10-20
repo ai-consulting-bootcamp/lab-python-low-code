@@ -1,0 +1,5 @@
+{
+  "success": false,
+  "meal_plan": null,
+  "error": "OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Your API key has been invalidated.', 'type': None, 'code': 'token_invalidated', 'param': None}, 'status': 401}"
+}
