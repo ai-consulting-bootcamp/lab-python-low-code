@@ -1,0 +1,7 @@
+{
+  "requests": [
+    {"dietary_preference": "paleo", "theme_requests": "Italian", "additional_preferences": "none"},
+    {"theme_requests": "Mexican", "additional_preferences": "no nuts"},
+    {"dietary_preference": "vegan", "theme_requests": 42, "additional_preferences": ["no soy"]}
+  ]
+}
