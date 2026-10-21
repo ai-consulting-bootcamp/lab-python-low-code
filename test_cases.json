@@ -1,0 +1,17 @@
+[
+  {
+    "dietary_preference": "vegetarian",
+    "theme_requests": "Mediterranean cuisine",
+    "additional_preferences": "high protein"
+  },
+  {
+    "dietary_preference": "vegan",
+    "theme_requests": "quick weeknight meals",
+    "additional_preferences": "budget friendly"
+  },
+  {
+    "dietary_preference": "omnivore",
+    "theme_requests": "random",
+    "additional_preferences": "none"
+  }
+]

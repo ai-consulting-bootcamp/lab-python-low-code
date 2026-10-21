@@ -1,0 +1,98 @@
+===== Missing file =====
+[ERROR] load_test_cases | FileNotFoundError
+Message: [Errno 2] No such file or directory: 'does_not_exist.json'
+Context: path='does_not_exist.json'
+Suggestion: Check the file name and that it sits next to the notebook.
+
+===== Malformed JSON file =====
+[ERROR] load_test_cases | JSONDecodeError
+Message: Expecting property name enclosed in double quotes: line 1 column 61 (char 60)
+Context: path='malformed.json', line 1, column 61
+Suggestion: Fix the JSON syntax at that position.
+
+===== Invalid test data =====
+[ERROR] load_test_cases | ValidationError
+Message: 1 validation error for TestCase
+dietary_preference
+  Input should be 'omnivore', 'vegetarian', 'vegan' or 'keto' [type=literal_error, input_value='carnivore', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/literal_error
+Context: path='invalid_test_cases.json', case #1: dietary_preference: Input should be 'omnivore', 'vegetarian', 'vegan' or 'keto'
+Suggestion: Fix that test case.
+
+===== Text before JSON =====
+Parsed without error
+
+===== No JSON at all =====
+[ERROR] extract_json | ResponseParseError
+Message: No JSON object found. Response starts with: 'Sorry, I cannot help with that.'
+
+===== Broken JSON =====
+[ERROR] extract_json | ResponseParseError
+Message: Invalid JSON at line 1, column 14: Expecting value
+
+===== Valid sample plan =====
+Valid
+
+===== 6 recipes =====
+[ERROR] run_basic_validation -> MealPlan | ValidationError
+Message: 1 validation error for MealPlan
+recipes
+  Value error, Meal plan must contain exactly 7 recipes. [type=value_error, input_value=[{'day': 'Monday', 'theme...instructions': 'Cook.'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+Context: recipes: Value error, Meal plan must contain exactly 7 recipes.
+Suggestion: Fix the listed fields.
+
+===== 4 ingredients =====
+[ERROR] run_basic_validation -> MealPlan | ValidationError
+Message: 7 validation errors for MealPlan
+recipes.0.ingredients
+  Value error, Recipe must contain exactly 5 ingredients. [type=value_error, input_value=[{'name': 'item 0', 'quan...', 'quantity': '100 g'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+recipes.1.ingredients
+  Value error, Recipe must contain exactly 5 ingredients. [type=value_error, input_value=[{'name': 'item 0', 'quan...', 'quantity': '100 g'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+recipes.2.ingredients
+  Value error, Recipe must contain exactly 5 ingredients. [type=value_error, input_value=[{'name': 'item 0', 'quan...', 'quantity': '100 g'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+recipes.3.ingredients
+  Value error, Recipe must contain exactly 5 ingredients. [type=value_error, input_value=[{'name': 'item 0', 'quan...', 'quantity': '100 g'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+recipes.4.ingredients
+  Value error, Recipe must contain exactly 5 ingredients. [type=value_error, input_value=[{'name': 'item 0', 'quan...', 'quantity': '100 g'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+recipes.5.ingredients
+  Value error, Recipe must contain exactly 5 ingredients. [type=value_error, input_value=[{'name': 'item 0', 'quan...', 'quantity': '100 g'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+recipes.6.ingredients
+  Value error, Recipe must contain exactly 5 ingredients. [type=value_error, input_value=[{'name': 'item 0', 'quan...', 'quantity': '100 g'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+Context: recipes.0.ingredients: Value error, Recipe must contain exactly 5 ingredients.; recipes.1.ingredients: Value error, Recipe must contain exactly 5 ingredients.; recipes.2.ingredients: Value error, Recipe must contain exactly 5 ingredients.; recipes.3.ingredients: Value error, Recipe must contain exactly 5 ingredients.; recipes.4.ingredients: Value error, Recipe must contain exactly 5 ingredients.; recipes.5.ingredients: Value error, Recipe must contain exactly 5 ingredients.; recipes.6.ingredients: Value error, Recipe must contain exactly 5 ingredients.
+Suggestion: Fix the listed fields.
+
+===== Duplicate themes =====
+[ERROR] run_basic_validation -> MealPlan | ValidationError
+Message: 1 validation error for MealPlan
+recipes
+  Value error, All recipe themes must be unique. [type=value_error, input_value=[{'day': 'Monday', 'theme...instructions': 'Cook.'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+Context: recipes: Value error, All recipe themes must be unique.
+Suggestion: Fix the listed fields.
+
+===== None textbox =====
+{
+  "dietary_preference": "vegan",
+  "theme_requests": "random diverse cuisines",
+  "additional_preferences": "none",
+  "format_instructions": "STRICT OUTPUT FORMAT:\n- Return only the JSON value that conforms to the schema. Do not include any additional text, explanations, headings, or separators.\
+
+===== Wrong API key =====
+[ERROR] MealPlanGenerator._call_llm | OpenAIAuthenticationError
+Message: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-fake-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+Context: diet='vegan', model=gpt-4o-mini
+Suggestion: Check OPENAI_API_KEY in .env. Retrying will not help.
+
+===== Network unreachable =====
+[ERROR] MealPlanGenerator._call_llm | OpenAIConnectionError
+Message: Connection error.
+Context: diet='vegan', model=gpt-4o-mini
+Suggestion: Could not reach OpenAI. Check your internet connection.
