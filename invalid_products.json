@@ -1,0 +1,12 @@
+
+{
+  "products": [
+    {
+      "id": "P004",
+      "name": "Broken Product",
+      "category": "Electronics",
+      "price": -50,
+      "features": ["Test feature"]
+    }
+  ]
+}

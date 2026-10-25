@@ -1,0 +1,10 @@
+
+{
+  "products": [
+    {
+      "id": "P001",
+      "name": "Headphones",
+      "price": 99.99,
+    }
+  ]
+}

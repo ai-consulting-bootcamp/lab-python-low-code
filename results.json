@@ -1,0 +1,17 @@
+[
+  {
+    "id": "P001",
+    "name": "Wireless Bluetooth Headphones",
+    "description": "Wireless Bluetooth Headphones is a product in the Electronics category, priced at 99.99. Key features include: Bluetooth 5.0, Noise Cancelling, 30hr Battery, Comfortable Fit."
+  },
+  {
+    "id": "P002",
+    "name": "Smart Watch",
+    "description": "Smart Watch is a product in the Wearables category, priced at 249.99. Key features include: Heart Rate Monitor, GPS, Water Resistant, Sleep Tracking."
+  },
+  {
+    "id": "P003",
+    "name": "Laptop Stand",
+    "description": "Laptop Stand is a product in the Accessories category, priced at 49.99. Key features include: Adjustable Height, Aluminum Construction, Cable Management."
+  }
+]
