@@ -1,0 +1,133 @@
+--- product_listing_generator_original.py	2026-10-30 09:34:12.458762000 +0100
++++ product_listing_generator.py	2026-10-30 15:09:38.659838000 +0100
+@@ -18,6 +18,8 @@
+ import openai
+ from dotenv import load_dotenv
+ from openai import OpenAI
++import sys
++from pydantic import BaseModel, Field, ValidationError
+ 
+ # 2. Leer la clave del .env (sin mostrarla)
+ load_dotenv()
+@@ -33,15 +35,23 @@
+ )
+ MODEL = "gemini-3.5-flash-lite"
+ 
+-# 4. Datos de los productos (Step 2)
+-products = [
+-    {"id": 1, "name": "Taza esmaltada vintage", "price": 12.99,
+-     "category": "Hogar", "image_path": "images/taza.jpg"},
+-    {"id": 2, "name": "Zapatillas deportivas", "price": 59.90,
+-     "category": "Calzado", "image_path": "images/zapatillas.jpg"},
+-    {"id": 3, "name": "Auriculares inalámbricos", "price": 79.99,
+-     "category": "Electrónica", "image_path": "images/auriculares.jpg"},
+-]
++# 4. Molde de un producto y carga desde un archivo JSON (Step 2: los datos ya no están dentro del código)
++PRODUCTS_FILE = "products.json"
++
++
++class Product(BaseModel):
++    """Cómo debe ser un producto. Pydantic rechaza el que no encaje."""
++    id: int
++    name: str = Field(min_length=1)
++    price: float = Field(gt=0)
++    category: str = Field(min_length=1)
++    image_path: str = Field(min_length=1)
++
++
++def load_products(path):
++    """Solo carga el archivo JSON y devuelve la lista de productos, sin validarlos."""
++    with open(path, "r", encoding="utf-8") as f:
++        return json.load(f)
+ 
+ 
+ # 5. Codificar imagen a base64 (Step 3)
+@@ -110,44 +120,65 @@
+ 
+ 
+ # 9. Generar la ficha de UN producto, con manejo de errores (Step 6)
++
++def format_error(function_name, error, context, suggestion):
++    return f"[ERROR en {function_name}] {type(error).__name__}: {error} | Contexto: {context} | Sugerencia: {suggestion}"
+ def generate_listing(product):
+     """Devuelve un diccionario con el producto y su ficha, o con el error ocurrido."""
+     result = {"id": product["id"], "name": product["name"],
+-              "price": product["price"], "category": product["category"]}
++              "price": product["price"], "category": product["category"],
++              "status": "error"}   # por defecto "error"; solo se cambia a "ok" si todo va bien
++    context = f"producto {product['id']} ({product['name']})"
+     try:
+         encoded = encode_image_to_base64(product["image_path"])
+         prompt = create_product_listing_prompt(product["name"], product["price"], product["category"])
+         raw_text = call_model(prompt, encoded)
+         result["listing"] = parse_listing(raw_text)
+         result["status"] = "ok"
+-    except FileNotFoundError:
+-        result["status"] = "error"
+-        result["error"] = f"imagen no encontrada: {product['image_path']}"
+-    except openai.AuthenticationError as e:          # 401: clave no válida
+-        result["status"] = "error"
+-        result["error"] = f"autenticación: {e}"
+-    except openai.BadRequestError as e:              # 400: petición incorrecta (Gemini también lo usa para clave no válida)
+-        result["status"] = "error"
+-        result["error"] = f"petición incorrecta: {e}"
+-    except openai.RateLimitError as e:               # 429: demasiadas peticiones o sin cuota
+-        result["status"] = "error"
+-        result["error"] = f"límite de uso: {e}"
+-    except (openai.APITimeoutError, openai.APIConnectionError) as e:   # sin respuesta o sin conexión
+-        result["status"] = "error"
+-        result["error"] = f"conexión o tiempo agotado: {e}"
+-    except openai.InternalServerError as e:          # 5xx: problema del servidor (ej. 503 saturado)
+-        result["status"] = "error"
+-        result["error"] = f"servidor no disponible: {e}"
+-    except (json.JSONDecodeError, ValueError) as e:  # la IA no devolvió un JSON válido o le faltan campos
+-        result["status"] = "error"
+-        result["error"] = f"respuesta mal formada: {e}"
++    except FileNotFoundError as e:
++        result["error"] = format_error("encode_image_to_base64", e, f"{context}, archivo {product['image_path']}",
++                                       "Comprueba que la imagen existe en la carpeta images/ y que el nombre coincide con image_path")
++    except (openai.AuthenticationError, openai.BadRequestError) as e:   # 401 / 400: clave no válida o petición rechazada
++        result["error"] = format_error("call_model", e, context,
++                                       "Revisa que la clave esté bien escrita en el archivo .env (GEMINI_API_KEY)")
++    except openai.RateLimitError as e:                                   # 429: demasiadas peticiones o sin cupo
++        result["error"] = format_error("call_model", e, context,
++                                       "Espera un minuto y reinténtalo; si sigue, has gastado el cupo del día: espera a mañana o revisa tu plan")
++    except (openai.APITimeoutError, openai.APIConnectionError) as e:     # sin conexión o sin respuesta a tiempo
++        result["error"] = format_error("call_model", e, context,
++                                       "Comprueba tu conexión a internet y reinténtalo en unos minutos")
++    except openai.InternalServerError as e:                              # 5xx: fallo de los servidores de Gemini
++        result["error"] = format_error("call_model", e, context,
++                                       "El fallo es de Gemini, no tuyo: no cambies nada y reinténtalo en unos minutos")
++    except (json.JSONDecodeError, ValueError) as e:                      # respuesta sin JSON válido o con campos que faltan
++        result["error"] = format_error("parse_listing", e, context,
++                                       "La IA no devolvió el JSON esperado: vuelve a ejecutar; si se repite, revisa el prompt")
+     return result
+ 
+ 
+ # 10. Procesar todos los productos y guardar los resultados (Step 6)
+ if __name__ == "__main__":
++    # Archivo de productos: por defecto products.json; se puede indicar otro al ejecutar
++    path = sys.argv[1] if len(sys.argv) > 1 else PRODUCTS_FILE
++    try:
++        products = load_products(path)
++    except FileNotFoundError as e:
++        raise SystemExit(format_error("load_products", e, f"archivo {path}",
++                                      "Comprueba que el archivo existe en la carpeta del programa y que el nombre está bien escrito"))
++    except json.JSONDecodeError as e:
++        raise SystemExit(format_error("load_products", e, f"archivo {path}, línea {e.lineno}, columna {e.colno}",
++                                      "Revisa el JSON en esa posición: suele faltar o sobrar una coma, una comilla o una llave"))
++
+     results = []
+-    for product in products:
++    for raw in products:
++        try:
++            product = dict(Product(**raw))   # Pydantic revisa el producto en la puerta
++        except ValidationError as e:
++            message = format_error("Product (validación Pydantic)", e, f"producto {raw.get('id', '?')} de {path}",
++                                   "Corrige en el archivo JSON los campos que se indican")
++            print(f"  ERROR -> {message}")
++            results.append({"id": raw.get("id"), "status": "error", "error": message})
++            continue   # este producto no va a Gemini; seguimos con el siguiente
+         print(f"Procesando {product['id']}: {product['name']} ...")
+         result = generate_listing(product)
+         if result["status"] == "ok":

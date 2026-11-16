@@ -1,0 +1,4 @@
+[
+  {"id": 1, "name": "Taza esmaltada vintage", "price": 12.99, "category": "Hogar", "image_path": "images/taza.jpg"},
+  {"id": 2, "name": "Zapatillas deportivas" "price": 59.90, "category": "Calzado", "image_path": "images/zapatillas.jpg"}
+]

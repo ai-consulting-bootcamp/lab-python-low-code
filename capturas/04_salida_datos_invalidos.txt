@@ -1,0 +1,21 @@
+producto 4 -> error
+[ERROR en Product (validación Pydantic)] ValidationError: 1 validation error for Product
+price
+  Input should be greater than 0 [type=greater_than, input_value=-5, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.13/v/greater_than | Contexto: producto 4 de invalid_products.json | Sugerencia: Corrige en el archivo JSON los campos que se indican
+
+producto 5 -> error
+[ERROR en Product (validación Pydantic)] ValidationError: 1 validation error for Product
+price
+  Field required [type=missing, input_value={'id': 5, 'name': 'Zapati...'images/zapatillas.jpg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing | Contexto: producto 5 de invalid_products.json | Sugerencia: Corrige en el archivo JSON los campos que se indican
+
+producto 6 -> error
+[ERROR en Product (validación Pydantic)] ValidationError: 2 validation errors for Product
+name
+  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_too_short
+price
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='doce', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing | Contexto: producto 6 de invalid_products.json | Sugerencia: Corrige en el archivo JSON los campos que se indican
+
