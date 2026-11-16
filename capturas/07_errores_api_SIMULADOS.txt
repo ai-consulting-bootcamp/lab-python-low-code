@@ -1,0 +1,18 @@
+ERRORES DE API: SIMULADOS en el entorno del tutor (no ejecutados en el ordenador del alumno).
+Se usa el código refactorizado real; solo se sustituye la llamada a Gemini por un error fabricado.
+
+--- Clave no válida (401)
+[ERROR en call_model] AuthenticationError: API key not valid. Please pass a valid API key. | Contexto: producto 1 (Taza esmaltada vintage) | Sugerencia: Revisa que la clave esté bien escrita en el archivo .env (GEMINI_API_KEY)
+
+--- Sin cupo / demasiadas peticiones (429)
+[ERROR en call_model] RateLimitError: Resource has been exhausted (e.g. check quota). | Contexto: producto 1 (Taza esmaltada vintage) | Sugerencia: Espera un minuto y reinténtalo; si sigue, has gastado el cupo del día: espera a mañana o revisa tu plan
+
+--- Sin conexión (red)
+[ERROR en call_model] APIConnectionError: Connection error. | Contexto: producto 1 (Taza esmaltada vintage) | Sugerencia: Comprueba tu conexión a internet y reinténtalo en unos minutos
+
+--- Tiempo agotado (red)
+[ERROR en call_model] APITimeoutError: Request timed out. | Contexto: producto 1 (Taza esmaltada vintage) | Sugerencia: Comprueba tu conexión a internet y reinténtalo en unos minutos
+
+--- Servidor saturado (503)
+[ERROR en call_model] InternalServerError: The model is overloaded. Please try again later. | Contexto: producto 1 (Taza esmaltada vintage) | Sugerencia: El fallo es de Gemini, no tuyo: no cambies nada y reinténtalo en unos minutos
+

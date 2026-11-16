@@ -1,0 +1,5 @@
+[
+  {"id": 4, "name": "Taza rota", "price": -5, "category": "Hogar", "image_path": "images/taza.jpg"},
+  {"id": 5, "name": "Zapatillas sin precio", "category": "Calzado", "image_path": "images/zapatillas.jpg"},
+  {"id": 6, "name": "", "price": "doce", "category": "Electrónica", "image_path": "images/auriculares.jpg"}
+]

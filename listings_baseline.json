@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Taza esmaltada vintage",
+    "price": 12.99,
+    "category": "Hogar",
+    "listing": {
+      "title": "Taza Esmaltada Vintage Floral 12.99 € | Hogar",
+      "description": "Disfruta de tus momentos de relax con nuestra taza esmaltada vintage de 12.99 €, una pieza única que aporta un toque rústico y acogedor a tu hogar. Fabricada en metal resistente con un acabado esmaltado en color blanco roto, destaca por su encantador estampado floral multicolor, donde predominan delicadas flores rojas, amarillas y azules. Su diseño clásico se completa con un elegante borde superior dorado brillante que aporta un sutil contraste. Perfecta para saborear un café humeante o una infusión caliente por la mañana, esta taza combina durabilidad y estética retro. Es ideal para los amantes de la decoración nostálgica y campestre, funcionando tanto como menaje diario o como un elemento decorativo lleno de personalidad. Transforma cada sorbo en una experiencia cálida y visualmente entrañable.",
+      "features": [
+        "Diseño vintage con estampado floral multicolor",
+        "Fabricada en metal con acabado esmaltado blanco",
+        "Borde superior reforzado con tono dorado",
+        "Ideal para bebidas calientes con vapor",
+        "Estética rústica, campestre y retro",
+        "Resistente, ligera y duradera para uso diario",
+        "Perfecta para decoración de hogar o regalo"
+      ],
+      "keywords": "taza esmaltada vintage, taza retro flores, menaje hogar, taza metal esmaltado, taza diseño floral, taza café vintage, vajilla rústica, taza blanca con flores, regalo original hogar, taza estilo campestre, menaje cocina vintage"
+    },
+    "status": "ok"
+  },
+  {
+    "id": 2,
+    "name": "Zapatillas deportivas",
+    "price": 59.9,
+    "category": "Calzado",
+    "listing": {
+      "title": "Zapatillas Deportivas Grises y Negras de Lona | 59,90 €",
+      "description": "Renueva tu estilo urbano con estas zapatillas deportivas de diseño caña alta, perfectas para la temporada de otoño e invierno. Confeccionadas en resistente lona gris combinada con paneles negros de ante sintético, ofrecen una estética moderna y versátil que destaca en cualquier entorno nocturno. Su puntera de goma reforzada blanca y su suela flexible aseguran una gran durabilidad y comodidad durante todo el día. Cuentan con un sistema clásico de cordones blancos y detalles en contraste, como la etiqueta textil en la lengüeta. Ideales para completar un look casual con joggers o vaqueros, combinando moda urbana y confort superior al mejor precio.",
+      "features": [
+        "Diseño de caña alta estilo urbano",
+        "Exterior de lona gris con paneles negros",
+        "Puntera de goma reforzada en color blanco",
+        "Suela de goma antideslizante y flexible",
+        "Cordones blancos clásicos ajustables",
+        "Detalle de etiqueta textil en la lengüeta",
+        "Interior cómodo para uso diario"
+      ],
+      "keywords": "zapatillas deportivas, calzado urbano, zapatillas grises, zapatillas de lona, zapatos de moda, calzado casual, zapatillas caña alta, zapatillas hombre, zapatillas mujer, calzado cómodo, zapatillas baratas"
+    },
+    "status": "ok"
+  },
+  {
+    "id": 3,
+    "name": "Auriculares inalámbricos",
+    "price": 79.99,
+    "category": "Electrónica",
+    "listing": {
+      "title": "Auriculares Inalámbricos Negros Supraaurales | 79,99 €",
+      "description": "Disfruta de tu música favorita sin ataduras con estos elegantes auriculares inalámbricos en color negro mate. Su diseño supraaural combina una estructura de plástico resistente con suaves almohadillas de símil piel que garantizan la máxima comodidad durante largas sesiones de escucha. Ideales para el día a día, ofrecen un sonido envolvente y equilibrado que te sumerge por completo en tus listas de reproducción, podcasts o llamadas. Cuentan con un puerto de conexión accesible en la copa izquierda y un perfil ergonómico que se adapta perfectamente a ti. Con una excelente relación calidad-precio por solo 79,99 €, son el complemento tecnológico perfecto para quienes buscan estilo, libertad de movimiento y un rendimiento de audio superior en cualquier lugar.",
+      "features": [
+        "Diseño inalámbrico sin cables",
+        "Acabado en elegante color negro mate",
+        "Almohadillas acolchadas de símil piel",
+        "Estructura de plástico ligero y resistente",
+        "Formato supraaural ergonómico",
+        "Puerto de conexión integrado en la copa",
+        "Excelente relación calidad-precio"
+      ],
+      "keywords": "auriculares inalámbricos, cascos bluetooth, auriculares negros, audio portátil, electrónica, auriculares supraaurales, música sin cables, auriculares de diadema, tecnología, gadgets de sonido, cascos cómodos"
+    },
+    "status": "ok"
+  }
+]
